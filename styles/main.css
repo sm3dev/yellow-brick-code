@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    width: 100%;
+}
+
+/* Header ------------------------------*/
+.header--all-caps {
+    text-transform: uppercase;
+}
+
+nav {
+    padding-block: 1rem;
+}
+
+.navbar-list li {
+    display: inline;
+    list-style-type: none;
+    margin-block: .5rem;
+    padding: 0;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+}
+
+.navbar-list li a:active,
+.navbar-list li a:visited {
+    text-decoration: underline;
+}
+
+.text--align-center {
+    text-align: center;
+}
+
+/* Main content ------------------------------ */
+.content-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.content {
+    flex: 3 auto;
+    background-color: #eeeeee;
+    padding: 2rem 1rem;
+}
+
+.content-friends,
+.content__news {
+    padding: 2rem;
+}
+
+.friends__block {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 3 1 240px;
+    justify-content: space-evenly;
+}
+
+.friends__block-item {
+    width: 240px;
+    padding: 1rem .5rem;
+}
+
+.friend__photo > img {
+    width: 240px;
+    height: 320px;
+    object-fit: cover;
+
+}
+/* Sidebar ------------------------------ */
+
+.sidebar {
+    width: 300px;
+    flex: 1 0 300px;
+    margin-inline-start: 1rem;
+}
+
+/* Footer ------------------------------ */
+footer {
+    padding-block: .5rem;
+    color: #eeeeee;
+}
+
+/* Miscellaneous ------------------------- */
+.background--color-grey {
+    background-color: #999999;
+}
+
+.friend__photo:not( img) {
+    content: "picture";
+    background-color: #55000020;
+}
+
+img {
+    width: 100%;
+}
+
+.background--color-lightgrey {
+    background-color: #dddddd;
+}
+
+.background--color-darkgrey {
+    background-color: #333333;
+}
